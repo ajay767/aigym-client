@@ -6,7 +6,7 @@ function CategorySection() {
   const CategoryCard = () => {
     return (
       <div
-        className="h-10 mr-2 w-max px-4 p-2 bg-red-400 rounded-md text-white "
+        className="h-14 mr-2 w-max px-8 flex items-center justify-center  rounded-md text-white text-lg"
         style={{
           backgroundImage: "url('/assets/images/gym.jpg')",
           backgroundSize: 'cover',

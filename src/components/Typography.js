@@ -11,19 +11,15 @@ function Typography({ type, children, className, ...props }) {
     }
 
     case 'section': {
-      return <h4 className={`${className} text-xl`}>{children}</h4>;
+      return <h4 className={`${className} text-xl font-bold`}>{children}</h4>;
     }
 
     case 'content': {
-      return <p className={`${className} text-sm `}>{children}</p>;
-    }
-
-    case 'base': {
       return <p className={`${className} text-base `}>{children}</p>;
     }
 
     case 'caption': {
-      return <span className={`${className} text-xs  `}>{children}</span>;
+      return <p className={`${className} text-sm `}>{children}</p>;
     }
 
     default: {

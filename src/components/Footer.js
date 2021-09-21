@@ -24,7 +24,7 @@ function Footer() {
             to={path}
             key={index}
           >
-            <div className="flex items-center justify-between bg-yellow-100 text-yellow-600 p-2 px-4  self-center justify-self-center rounded-md">
+            <div className="flex items-center justify-between bg-blue-100 text-blue-500 p-2 px-4  self-center justify-self-center rounded-md">
               <Icon className="mr-2 " size={size} />
               <Typography type="content">{title}</Typography>
             </div>
@@ -47,7 +47,7 @@ function Footer() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white text-gray-500  h-14 mx-auto px-4 grid grid-cols-3  ">
+    <div className="fixed bottom-0 left-0 right-0 w-full bg-white text-gray-500  h-14 mx-auto px-4 grid grid-cols-3  ">
       {renderBottomNav()}
     </div>
   );
