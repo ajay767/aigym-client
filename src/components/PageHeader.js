@@ -1,21 +1,21 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { BiArrowBack } from 'react-icons/bi';
-import Typography from './Typography';
+import { IoIosArrowBack } from 'react-icons/io';
+import Typography from '@ui/Typography';
 
 function PageHeader({ title }) {
   const history = useHistory();
 
   return (
-    <div className="p-2 py-4 grid grid-cols-3">
+    <div className="p-2 py-2 grid grid-cols-3 bg-white border-b-2 border-gray-100">
       <div
-        className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center"
+        className="h-8 w-8 rounded-full  flex items-center justify-center"
         onClick={() => history.goBack()}
       >
-        <BiArrowBack size={30} />
+        <IoIosArrowBack size={24} />
       </div>
       <div className="self-center justify-self-center ">
-        <Typography type="section">{title}</Typography>
+        <Typography type="header">{title}</Typography>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TextInput from '../../components/TextInput';
-import Typography from '../../components/Typography';
+import TextInput from '@ui/TextInput';
+import Typography from '@ui/Typography';
 import Section from '../../layout/Section';
-import Button from '../../components/Button';
+import Button from '@ui/Button';
 export default function Signup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -10,53 +10,57 @@ export default function Signup() {
   const [confirmPassword, setConfirmPassword] = useState('');
 
   return (
-    <Section className=''>
-      <Typography type='primary' className='text-center py-24'>
-        FitX
+    <Section className="py-2">
+      <Typography type="secondary" className="text-center py-20">
+        Fit<span className="font-extrabold">X</span>
       </Typography>
-      <TextInput
-        value={name}
-        setValue={setName}
-        placeholder='Enter Your Name Here'
-        type='text'
-        label='Name'
-        textType='primary'
-      />
-      <TextInput
-        value={email}
-        setValue={setEmail}
-        placeholder='john@gmail.com'
-        type='email'
-        label='Email'
-        textType='primary'
-      />
-      <TextInput
-        className='my-4'
-        placeholder='••••••••'
-        type='password'
-        textType='primary'
-        label='Password'
-        value={password}
-        setValue={setPassword}
-      />
-      <TextInput
-        className='my-4'
-        placeholder='••••••••'
-        type='password'
-        textType='primary'
-        label='Confirm Password'
-        value={confirmPassword}
-        setValue={setConfirmPassword}
-      />
-      <Button onClick={() => console.log('clicked')} btnType='primary'>
+      <div className="flex flex-col space-y-2">
+        <TextInput
+          value={name}
+          setValue={setName}
+          placeholder="Enter Your Name Here"
+          type="text"
+          label="Name"
+          textType="primary"
+        />
+        <TextInput
+          value={email}
+          setValue={setEmail}
+          placeholder="john@gmail.com"
+          type="email"
+          label="Email"
+          textType="primary"
+        />
+        <TextInput
+          placeholder="••••••••"
+          type="password"
+          textType="primary"
+          label="Password"
+          value={password}
+          setValue={setPassword}
+        />
+        <TextInput
+          placeholder="••••••••"
+          type="password"
+          textType="primary"
+          label="Confirm Password"
+          value={confirmPassword}
+          setValue={setConfirmPassword}
+        />
+      </div>
+      <Button
+        className="my-5"
+        onClick={() => console.log('clicked')}
+        btnType="primary"
+      >
         Signup
       </Button>
-      <div className='py-10 text-center text-gray-600 font-medium leading-tight '>
-        <Typography type='caption' className=' inline-block cursor-pointer'>
-          Login ?
+      <div className="py-10 text-center text-gray-600 font-medium leading-tight ">
+        <Typography type="caption" className=" inline-block cursor-pointer">
+          No account? signup instead.
         </Typography>
       </div>
-      <Typography className='text-xs text-gray-400 text-center mt-28'>
+      <Typography className="text-xs text-gray-400 text-center ">
         It is a long established fact that a reader will be distracted by the
         readable content
       </Typography>

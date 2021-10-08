@@ -1,16 +1,14 @@
 import React from 'react';
 import Section from '../layout/Section';
+import Typography from '@ui/Typography';
 
 function Landing() {
   return (
     <Section>
-      <h1 className="text-gray-700 mt-4">
-        <span className=" text-3xl font-bold">
-          Hi, <span className="text-blue-500">John</span>
-        </span>
-        <br />
-        <span className="text-lg font-medium ">Good Morning</span>
-      </h1>
+      <Typography type="secondary" className="text-gray-700 mt-4">
+        Hi, <span className="text-blue-500">Vivek</span>
+      </Typography>
+      <Typography type="header">Good Morning</Typography>
     </Section>
   );
 }

@@ -8,5 +8,5 @@ body {
 }
 
 .App {
-  @apply w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mx-auto bg-gray-50 min-h-screen text-gray-700;
+  @apply w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mx-auto  min-h-screen;
 }

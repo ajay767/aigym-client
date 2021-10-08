@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Landing from '../front/Landing';
 import SearchBar from '../components/SearchBar';
-import Typography from '../components/Typography';
+import Typography from '@ui/Typography';
 import Section from '../layout/Section';
 import CategorySection from '../front/CategorySection';
 

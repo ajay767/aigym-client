@@ -1,5 +1,6 @@
-@import './typography.scss';
-
 @import './components/header';
 @import './components/footer';
+
+@import './utils/typography.scss';
 @import './utils/sidebar.scss';
+@import './utils/ocrloader';

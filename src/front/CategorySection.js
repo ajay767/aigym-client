@@ -1,18 +1,18 @@
 import React from 'react';
 import Section from '../layout/Section';
-import Typography from '../components/Typography';
+import Typography from '@ui/Typography';
 
 function CategorySection() {
   const CategoryCard = () => {
     return (
       <div
-        className="h-14 mr-2 w-max px-8 flex items-center justify-center  rounded-md text-white text-lg"
+        className="h-10 mr-2 w-max px-8 flex items-center justify-center  rounded-md text-white text-lg"
         style={{
           backgroundImage: "url('/assets/images/gym.jpg')",
           backgroundSize: 'cover',
         }}
       >
-        Training
+        <Typography type="content"> Training</Typography>
       </div>
     );
   };

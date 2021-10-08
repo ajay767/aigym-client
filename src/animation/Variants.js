@@ -1,4 +1,4 @@
-export const sidebarVariant = {
+export const leftSlideIn = {
   hidden: {
     x: '-100vw',
   },
