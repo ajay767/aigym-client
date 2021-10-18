@@ -10,6 +10,14 @@ function Typography({ type, children, className, ...props }) {
       );
     }
 
+    case 'primary2': {
+      return (
+        <h1 {...props} className={`${className} text-4xl font-medium`}>
+          {children}
+        </h1>
+      );
+    }
+
     case 'secondary': {
       return (
         <h2 {...props} className={`${className} text-3xl font-bold`}>

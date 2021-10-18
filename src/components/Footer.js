@@ -24,7 +24,7 @@ function Footer() {
 
   const renderBottomNav = () => {
     return bottomNavigation.map(({ icon: Icon, size, title, path }, index) => {
-      if (location.pathname === path) {
+      if (location.pathname === path) {  // to understand
         return (
           <Link
             className="self-center justify-self-center"

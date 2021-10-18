@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Typography from '@ui/Typography';
 
+
 function Button({ btnType, className, children, ...props }) {
   switch (btnType) {
     case 'primary': {
